@@ -21,27 +21,33 @@ class Flight:
 
 
 # Origins - Destinations
-flight_01 = Flight('UK - New Vegas')
-flight_02 = Flight('Turkey - Paris')
-flight_03 = Flight('New York - UK')
-flight_04 = Flight('Spain - Portugal')
-flight_05 = Flight('France - Germany')
+origin_destination01 = Flight('UK - New Vegas')
+origin_destination02 = Flight('Turkey - Paris')
+origin_destination03 = Flight('New York - UK')
+origin_destination04 = Flight('Spain - Portugal')
+origin_destination05 = Flight('France - Germany')
 
 #list of flights
 
-# flight_01 = Flight()
-# flight_01.add_plane(Boeing_747_8)
-# flight_01.add_origin_destination(flight_01)
-# flight_01.add_passenger(passenger_1)
+flight_01 = Flight()
+flight_02 = Flight()
+flight_03 = Flight()
+flight_04 = Flight()
+flight_05 = Flight()
 
 list_flights = []
-list_flights.append(flight_01)
-list_flights.append(flight_02)
-list_flights.append(flight_03)
-list_flights.append(flight_04)
-list_flights.append(flight_05)
+list_flights.append(origin_destination01)
+list_flights.append(origin_destination02)
+list_flights.append(origin_destination03)
+list_flights.append(origin_destination04)
+list_flights.append(origin_destination05)
 
-
+list_passengers = []
+list_passengers.append(passenger_1)
+list_passengers.append(passenger_2)
+list_passengers.append(passenger_3)
+list_passengers.append(passenger_4)
+list_passengers.append(passenger_5)
 
 # #Creating a flight
 # test_flight = Flight()
