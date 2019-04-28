@@ -48,32 +48,3 @@ list_passengers.append(passenger_2)
 list_passengers.append(passenger_3)
 list_passengers.append(passenger_4)
 list_passengers.append(passenger_5)
-
-# #Creating a flight
-# test_flight = Flight()
-# # Adding a plane
-# test_flight.add_plane(Boeing_747)
-# # Adding an origin
-# test_flight.add_origin()
-# # Adding a destination
-# test_flight.add_destination()
-#
-# # Adding passenger 1 - as a string
-# test_flight.add_passenger(passenger_1)
-# test_flight.add_passenger(passenger_2)
-# test_flight.add_passenger(passenger_3)
-# print(test_flight.plane, ('Your flight origin is', test_flight.origin), ('Your destination is',test_flight.destination), test_flight.passengers_list)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
