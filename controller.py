@@ -1,7 +1,7 @@
-from person import Person
-from passenger import Passenger
+from person import *
+from passenger import *
 from flight import *
-from plane import Plane
+from plane import *
 terminal_input = 0
 while True:
     print('Gatwick airport terminal V0.1, please select a option below')
@@ -23,7 +23,7 @@ while True:
     elif terminal_input == 2:
         print('List of current flights')
         for flights in list_flights:
-            print(flights.origin_destination)
+            print('Flight', flights.origin_destination, 'With', flights.plane)
 
     elif terminal_input == 3:
         print('Add passenger to existing flight')
@@ -31,57 +31,57 @@ while True:
         user_input = int(input('Please make a selection'))
 
         if user_input == 1:
-            print('You have selected flight UK - New Vegas')
+            print('You have selected flight', airline_1.origin_destination)
             last_passenger = list_passengers[-1]
-            flight_01.add_passenger(last_passenger)
-            print('You have added', last_passenger.name, 'to flight', origin_destination01.origin_destination)
+            airline_1.add_passenger(last_passenger)
+            print('You have added', last_passenger.name, 'to flight', airline_1.origin_destination)
 
         elif user_input == 2:
-            print('You have selected flight Turkey - Paris')
+            print('You have selected flight', airline_2.origin_destination)
             last_passenger = list_passengers[-1]
-            flight_02.add_passenger(last_passenger)
-            print('You have added', last_passenger.name, 'to flight', origin_destination02.origin_destination)
+            airline_2.add_passenger(last_passenger)
+            print('You have added', last_passenger.name, 'to flight', airline_2.origin_destination)
 
         elif user_input == 3:
-            print('You have selected flight New York - UK')
+            print('You have selected flight ', airline_3.origin_destination)
             last_passenger = list_passengers[-1]
-            flight_03.add_passenger(last_passenger)
-            print('You have added', last_passenger.name, 'to flight', origin_destination03.origin_destination)
+            airline_3.add_passenger(last_passenger)
+            print('You have added', last_passenger.name, 'to flight', airline_3.origin_destination)
 
         elif user_input == 4:
-            print('You have selected flight Spain - Portugal')
+            print('You have selected flight', airline_4.origin_destination)
             last_passenger = list_passengers[-1]
-            flight_04.add_passenger(last_passenger)
-            print('You have added', last_passenger.name, 'to flight', origin_destination04.origin_destination)
+            airline_4.add_passenger(last_passenger)
+            print('You have added', last_passenger.name, 'to flight', airline_4.origin_destination)
 
         elif user_input == 5:
-            print('You have selected flight France - Germany')
+            print('You have selected flight', airline_5.origin_destination)
             last_passenger = list_passengers[-1]
-            flight_05.add_passenger(last_passenger)
-            print('You have added', last_passenger.name, 'to flight', origin_destination05.origin_destination)
+            airline_5.add_passenger(last_passenger)
+            print('You have added', last_passenger.name, 'to flight', airline_5.origin_destination)
 
     elif terminal_input == 4:
         print( 'Please select a flight to view passengers \n 1 - UK - New Vegas \n 2 - Turkey - Paris \n 3 - New York - UK \n 4 - Spain - Portugal \n 5 - France - Germany')
         user_input = int(input('Please make a selection'))
         if user_input == 1:
-            print('Please see below list for flight', origin_destination01.origin_destination)
-            for flight_list in flight_01.passengers_list:
+            print('Please see below passenger list for flight', airline_1.origin_destination)
+            for flight_list in airline_1.passengers_list:
                 print(flight_list.name)
         elif user_input == 2:
-            print('Please see below list for flight', origin_destination02.origin_destination)
-            for flight_list in flight_02.passengers_list:
+            print('Please see below passenger list for flight', airline_2.origin_destination)
+            for flight_list in airline_2.passengers_list:
                 print(flight_list.name)
         elif user_input == 3:
-            print('Please see below list for flight', origin_destination03.origin_destination)
-            for flight_list in flight_03.passengers_list:
+            print('Please see below passenger list for flight', airline_3.origin_destination)
+            for flight_list in airline_3.passengers_list:
                 print(flight_list.name)
         elif user_input == 4:
-            print('Please see below list for flight', origin_destination04.origin_destination)
-            for flight_list in flight_04.passengers_list:
+            print('Please see below passenger list for flight', airline_4.origin_destination)
+            for flight_list in airline_4.passengers_list:
                 print(flight_list.name)
         elif user_input == 5:
-            print('Please see below list for flight', origin_destination05.origin_destination)
-            for flight_list in flight_05.passengers_list:
+            print('Please see below passenger list for flight', airline_5.origin_destination)
+            for flight_list in airline_5.passengers_list:
                 print(flight_list.name)
     else:
          print('Invalid input, please enter a valid input')

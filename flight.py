@@ -2,9 +2,9 @@ from passenger import *
 from plane import *
 
 class Flight:
-    def __init__(self, origin_destination=''):
+    def __init__(self, origin_destination='', plane=''):
         self.origin_destination = origin_destination
-        self.plane = ''
+        self.plane = plane
         self.passengers_list = []
 
     def add_plane(self, plane):
@@ -13,34 +13,22 @@ class Flight:
     def add_origin_destination(self, origin_destination):
         self.origin_destination = origin_destination
 
-    # def add_destination(self, destination):
-    #     self.destination = destination
-
     def add_passenger(self, passenger):
         self.passengers_list.append(passenger)
 
-
-# Origins - Destinations
-origin_destination01 = Flight('UK - New Vegas')
-origin_destination02 = Flight('Turkey - Paris')
-origin_destination03 = Flight('New York - UK')
-origin_destination04 = Flight('Spain - Portugal')
-origin_destination05 = Flight('France - Germany')
-
-#list of flights
-
-flight_01 = Flight()
-flight_02 = Flight()
-flight_03 = Flight()
-flight_04 = Flight()
-flight_05 = Flight()
+# Airlines
+airline_1 = Flight('UK - New Vegas', Boeing_747_8.owner)
+airline_2 = Flight('Turkey - Paris', Boeing_747_400.owner)
+airline_3 = Flight('New York - UK', Boeing_747_400ER.owner)
+airline_4 = Flight('Spain - Portugal', Boeing_777_300.owner)
+airline_5 = Flight('France - Germany', Boeing_777_300ER.owner)
 
 list_flights = []
-list_flights.append(origin_destination01)
-list_flights.append(origin_destination02)
-list_flights.append(origin_destination03)
-list_flights.append(origin_destination04)
-list_flights.append(origin_destination05)
+list_flights.append(airline_1)
+list_flights.append(airline_2)
+list_flights.append(airline_3)
+list_flights.append(airline_4)
+list_flights.append(airline_5)
 
 list_passengers = []
 list_passengers.append(passenger_1)
